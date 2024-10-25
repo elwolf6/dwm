@@ -159,7 +159,7 @@ static const Key keys[] = {
 	{ MODKEY,			XK_BackSpace,  spawn,                  {.v = (const char*[]){ "sysact", NULL } } },
 	{ MODKEY|ShiftMask,		XK_BackSpace,  spawn,                  {.v = (const char*[]){ "sysact", NULL } } },
 
-	{ MODKEY,			XK_Tab,        view,                 { ControlMask,			XK_Insert,	spawn,		SHCMD("maim -u -s | xclip -sel clip -t image/png") }, {0} },
+	{ MODKEY,			XK_Tab,        view,                   {0} },
 	/* { MODKEY|ShiftMask,		XK_Tab,	       spawn,                  SHCMD("") }, */
 	{ MODKEY,			XK_q,          killclient,             {0} },
 	{ MODKEY|ShiftMask,		XK_q,          spawn,                  {.v = (const char*[]){ "sysact", NULL } } },
